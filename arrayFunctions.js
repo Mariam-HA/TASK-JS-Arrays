@@ -8,14 +8,8 @@
  * isArrayLengthOdd([1, 2, 3]) -> true
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
-
-let numbers = [1,2,3,4]
-let length = numbers.length;
-
 function isArrayLengthOdd(numbers) {
   // Your code here
-  console.log(numbers);
-  console.log(length);
   if (numbers.length %2 === 1){
     return true;
   }
@@ -24,9 +18,11 @@ function isArrayLengthOdd(numbers) {
   }
   //return numbers
 }
-console.log(isArrayLengthOdd(numbers));
-console.log(isArrayLengthOdd([1, 2, 3, 4])); //true
+
+//console.log(isArrayLengthOdd(numbers));
+console.log(isArrayLengthOdd([1, 2, 3 ])); //true
 console.log(isArrayLengthOdd([1, 2, 3, 4])); //false
+
 /**
  * isArrayLengthEven(numbers):
  * - receives array `numbers`
@@ -39,8 +35,8 @@ console.log(isArrayLengthOdd([1, 2, 3, 4])); //false
  */
 function isArrayLengthEven(numbers) {
   // Your code here
-  console.log(numbers);
-  console.log(length);
+  //console.log(numbers);
+  //console.log(length);
   if (numbers.length % 2 === 0){
     return true;
   }
@@ -48,8 +44,8 @@ function isArrayLengthEven(numbers) {
     return false;
   }
 }
-console.log(isArrayLengthEven(numbers));
-console.log(isArrayLengthEven([1, 2, 3, 4])); 
+//console.log(isArrayLengthEven(numbers));
+console.log(isArrayLengthEven([1, 2, 3])); 
 console.log(isArrayLengthEven([1, 2, 3, 4])); 
 /**
  * addLailaToArray(instructors):
@@ -78,16 +74,15 @@ console.log(addLailaToArray(instructors));
  * e.g.
  * eliminateTeam(["Brazil", "Germany", "Italy"]) -> "Italy"
  */
-let teams = ["Brazil", "Germany", "Italy"];
+//let teams = ["Brazil", "Germany", "Italy"];
  
 function eliminateTeam(teams) {
   // Your code here
-  return array.pop();
+  return teams.pop();
 }
 
-console.log(teams);
-console.log(eliminateTeam(teams));
-//console.log(removed);
+console.log(eliminateTeam(["Brazil", "Germany", "Italy"]));
+
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
  * - receives array `fruits`
