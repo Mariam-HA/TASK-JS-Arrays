@@ -8,9 +8,23 @@
  * isArrayLengthOdd([1, 2, 3]) -> true
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
+
+let numbers = [1,2,3,4]
+let length = numbers.length;
+
 function isArrayLengthOdd(numbers) {
   // Your code here
+  console.log(numbers);
+  console.log(length);
+  if (numbers.length %2 === 1){
+    return true;
+  }
+  else{
+    return false;
+  }
+  //return numbers
 }
+console.log(isArrayLengthOdd(numbers));
 
 /**
  * isArrayLengthEven(numbers):
@@ -24,8 +38,16 @@ function isArrayLengthOdd(numbers) {
  */
 function isArrayLengthEven(numbers) {
   // Your code here
+  console.log(numbers);
+  console.log(length);
+  if (numbers.length % 2 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
-
+console.log(isArrayLengthEven(numbers));
 /**
  * addLailaToArray(instructors):
  * - receives array `instructors`
@@ -34,9 +56,16 @@ function isArrayLengthEven(numbers) {
  * e.g.
  * addLailaToArray(["Mshary", "Hasan"]) -> ["Mshary", "Hasan", "Laila"]
  */
+let instructors = ["Mshary", "Hasan"];
+let arr2 = ["Laila"];
+
 function addLailaToArray(instructors) {
   // Your code here
+ let newArr = instructors.concat(arr2);
+  return newArr;
 }
+console.log(instructors);
+console.log(addLailaToArray(instructors));
 
 /**
  * eliminateTeam(teams):
@@ -46,10 +75,16 @@ function addLailaToArray(instructors) {
  * e.g.
  * eliminateTeam(["Brazil", "Germany", "Italy"]) -> "Italy"
  */
+let teams = ["Brazil", "Germany", "Italy"];
+ 
 function eliminateTeam(teams) {
   // Your code here
+  removed = teams.splice(2);
+  return teams;
 }
-
+console.log(teams);
+console.log(eliminateTeam(teams));
+console.log(removed);
 /**
  * secondHalfOfArrayIfItIsEven(fruits):
  * - receives array `fruits`
@@ -60,10 +95,21 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]) -> ["banana", "kiwi"]
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
+let fruits = ["apple", "orange","banana","kiwi","blueberry"];
+
 function secondHalfOfArrayIfItIsEven(fruits) {
   // Your code here
-}
+ let length = fruits.length;
+ if (length %2 == 0){
+  return fruits.slice(length/2);
+ }
+ else {
+  return [];
+ }
 
+}
+console.log(fruits);
+console.log(secondHalfOfArrayIfItIsEven(fruits));
 /**
  * youGottaCalmDown(shout):
  * - receives a string `shout`
